@@ -12,14 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let lbl = UILabel(frame: CGRect(x:100, y:100, width:150, height:30))
+        lbl.text = "Hello World"
+        lbl.backgroundColor = UIColor.green
+        lbl.textAlignment = NSTextAlignment.center        
+        view.addSubview(lbl)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
